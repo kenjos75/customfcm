@@ -28,7 +28,7 @@ class FcmClass{
   */
   public function send($to='',$data=array()){
 
-      $defaultData = array("title"=>"Default Title","body"=>"Default Data","icon"=>"firebase-logo.jpg");
+      $defaultData = array("title"=>"Default Title","body"=>"Default Data","icon"=>"firebase-logo.jpg","click_action"=>"http://localhost:8081");
       $check_data = array("title","body");
 
       if($data!=array() && $to!='' && $this->server_key!=''){
