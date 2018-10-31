@@ -51,10 +51,10 @@ class FcmClass{
         
       }
       else
-        return false;
+        return "shit";
 
-      return true;
-  }
+      return $result;
+  
 
   /**
   * Constructor
