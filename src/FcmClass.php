@@ -24,7 +24,7 @@ class FcmClass{
   *
   * @param string $to The receiver client app id
   * @param array $data The notification data
-  * @return boolean
+  * @return array
   */
   public function send($to='',$data=array()){
 
@@ -51,7 +51,7 @@ class FcmClass{
         
       }
       else
-        return "shit";
+        return array("status"=>"not ok");
 
       return $result;
   }
