@@ -45,6 +45,7 @@ class FcmClass{
         curl_setopt($s,CURLOPT_POST,true); 
         curl_setopt($s,CURLOPT_POSTFIELDS,json_encode(array("notification"=>$defaultData,"to"=>$to)); 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($tuCurl, CURLOPT_SSL_VERIFYPEER, false); 
         $result = curl_exec($ch);
         curl_close($curl);
         
