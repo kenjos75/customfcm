@@ -54,7 +54,7 @@ class FcmClass{
         return "shit";
 
       return $result;
-  
+  }
 
   /**
   * Constructor
